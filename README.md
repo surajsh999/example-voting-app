@@ -36,6 +36,8 @@ Run the following command to create the deployments and services. Note it will c
 
 ```shell
 kubectl create -f k8s-specifications/
+or
+kubectl create -f k8s-specifications/ --validate=false
 ```
 
 The `vote` web app is then available on port 31000 on each host of the cluster, the `result` web app is available on port 31001.
